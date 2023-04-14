@@ -14,7 +14,7 @@ const Login = () => {
          alt="chatgpt logo"
          className="animate-spin-slow"
        />
-       <button onClick={() => signIn()} className="text-xl animate-bounce">Login to use chat gpt</button>
+       <button onClick={() => signIn('google')} className="text-xl animate-bounce">Login to use chat gpt</button>
      </div>
    )
  }
