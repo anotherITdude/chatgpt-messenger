@@ -19,13 +19,13 @@ const ChatRow = ({id}: Props) => {
     const [ messages] = useCollection(
         collection( db, 'users', session?.user?.email!, 'chats', id, 'messages'),
     )
-    useEffect(() =>{
+    useEffect(() =>{ // get active state of the chat menu
     if(!currentPath) return;
     setActive(currentPath.includes(id))      
     }, [currentPath])
     const removeChat = async()=> {
         await deleteDoc(doc(db, 'users', session?.user?.email!, 'chats', id));
-        router.push('/')
+        router.push('/') //send the user to homepage after delete chat
     }
   return (
       <Link href={`/chat/${id}`} className={`flex flex-row chatRow justify-evenly items-center mt-2 ${active && 'animate-pulse bg-gray-600'}`}>
