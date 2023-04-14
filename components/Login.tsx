@@ -1,6 +1,8 @@
-'use-client'
+'use client'
 import Image from "next/image"
+import { signIn } from "next-auth/react"
 import chatgptLogo from './../public/ChatGPT-Logo1.png'
+
 
 const Login = () => {
    return (
@@ -12,7 +14,7 @@ const Login = () => {
          alt="chatgpt logo"
          className="animate-spin-slow"
        />
-       <button className="text-xl animate-bounce">Login to use chat gpt</button>
+       <button onClick={() => signIn()} className="text-xl animate-bounce">Login to use chat gpt</button>
      </div>
    )
  }
