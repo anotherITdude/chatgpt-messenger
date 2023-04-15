@@ -11,9 +11,11 @@ interface Props {
  const ChatPage = ({params: {id}}: Props) => {
    return (
      <div className='flex flex-col h-screen overflow-hidden'>
-       {/* chat */}
+       
+       {/* user requests and chat gpt responses go here*/}
        <Chat chatId={id} />
-       {/* chat input */}
+       
+       {/* chat form input */}
        <ChatInput chatId={id} />
       
      </div>

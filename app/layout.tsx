@@ -1,5 +1,6 @@
 import "./globals.css";
 import SideBar from "../components/SideBar";
+import ClientProvider from "../components/ClientProvider";
 import SessionProvider from "../components/SessionProvider";
 import { getServerSession } from "next-auth";
 import Login from "../components/Login";
@@ -31,6 +32,7 @@ console.log(session?.user)
               >
                 <SideBar />
               </div>
+              <ClientProvider />
               <div className=" flex-1 bg-[#343541]">{children}</div>
             </div>
           )}
