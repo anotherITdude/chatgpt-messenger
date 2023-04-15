@@ -2,30 +2,19 @@
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import { FormEvent, useState } from "react";
 import { useSession } from "next-auth/react";
-import { serverTimestamp, FieldValue, addDoc, collection } from "firebase/firestore";
-import { db } from "../firebase";
-import toast from 'react-hot-toast';
-
+import { serverTimestamp, addDoc, collection } from "firebase/firestore";
+import { db } from "../services/firebase";
+import toast from "react-hot-toast";
+import { Message } from "../types/types";
 
 interface Props {
   chatId: string;
 }
 
-interface Message {
-  text: string;
-  createdAt: FieldValue;
-  user: {
-    _id: string;
-    name: string;
-    avatar: string;
-  };
-}
-
 const ChatInput = ({ chatId }: Props) => {
-
   const [prompt, setPrompt] = useState<string | "">("");
   const { data: session } = useSession();
-  const model = 'text-davinci-003'
+  const model = "text-davinci-003";
 
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -43,35 +32,42 @@ const ChatInput = ({ chatId }: Props) => {
           session?.user?.image! ||
           `https:ui-avatars.com/api/?name=${session?.user?.name}`,
       },
-    }
-      
+    };
+
     // adding collection to firebase
     await addDoc(
-      collection(db, 'users', session?.user?.email!, 'chats', chatId, 'messages'),
+      collection(
+        db,
+        "users",
+        session?.user?.email!,
+        "chats",
+        chatId,
+        "messages"
+      ),
       chatMessage
-      )
+    );
 
     //toast notification for loading
-    const notification = toast('ChatGPT is thinking...')
+    const notification = toast("ChatGPT is thinking...");
 
     //asking question to chat gpt using custom api end point
-    await fetch('/api/askQuetion',{
-      method: 'POST',
-      headers:{
-        'Content-Type': 'application/json'
+    await fetch("/api/askChatgpt", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        prompt: input, chatId, model, session
-      })
+        prompt: input,
+        chatId,
+        model,
+        session,
+      }),
     }).then(() => {
-    //toast notification for success
-    toast.success('ChatGPT responded', {
-      id:notification
-    })
-    })
-
-
-
+      //toast notification for success
+      toast.success("ChatGPT responded", {
+        id: notification,
+      });
+    });
   };
 
   return (

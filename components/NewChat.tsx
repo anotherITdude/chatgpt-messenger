@@ -1,9 +1,9 @@
-'use client'
+"use client";
 import { PlusIcon } from "@heroicons/react/24/solid";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { db } from "../firebase";
+import { db } from "../services/firebase";
 
 const NewChat = () => {
   const router = useRouter();
@@ -19,7 +19,7 @@ const NewChat = () => {
     router.push(`/chat/${doc.id}`);
   };
   return (
-    <div  onClick={() => createNewChat()} className="chatRow">
+    <div onClick={() => createNewChat()} className="chatRow">
       <PlusIcon className="h-4 w-4" />
       <p>New Chat</p>
     </div>
