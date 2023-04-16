@@ -35,7 +35,7 @@ export default async function handler(
         user: {
             _id: 'ChatGPT',
             name: 'ChatGPT',
-            avatar: 'https://ui-avatars.com/api/?name=CGPT'
+            avatar: 'https://ui-avatars.com/api/?background=00A67E&color=fff&name=CGPT'
         }
     }
     await adminDb
