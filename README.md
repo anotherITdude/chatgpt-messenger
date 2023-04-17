@@ -1,6 +1,6 @@
 ## ChatGPT Messenger:
-
 Inspired by https://chat.openai.com/
+
 
 ## Build Stack:
 
@@ -16,9 +16,11 @@ Inspired by https://chat.openai.com/
 <li>Hero Icons</li>
 </ul>
 
+
 ## Demo Link
 
 [CLICK HERE](https://chatgpt-messenger-umber.vercel.app) to see the app hosted on Vercel.
+
 
 ## Flow
 
@@ -32,7 +34,6 @@ Inspired by https://chat.openai.com/
 </ul>
 
 ## App Screenshots
-
 <img width="800" alt="Screenshot 2023-04-17 at 2 32 26 PM" src="https://user-images.githubusercontent.com/4363970/232492915-81f8375f-2b78-4649-a084-874b3639fd17.png">
 
 <img width="800" alt="Screenshot 2023-04-17 at 2 56 24 PM" src="https://user-images.githubusercontent.com/4363970/232492979-63e7fcc9-ec2c-4708-8b8a-649232c2463f.png">
