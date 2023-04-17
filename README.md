@@ -1,17 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Screenshots
-<img width="800" alt="Screenshot 2023-04-17 at 2 32 26 PM" src="https://user-images.githubusercontent.com/4363970/232492915-81f8375f-2b78-4649-a084-874b3639fd17.png">
-
-<img width="800" alt="Screenshot 2023-04-17 at 2 56 24 PM" src="https://user-images.githubusercontent.com/4363970/232492979-63e7fcc9-ec2c-4708-8b8a-649232c2463f.png">
-
-<img width="800" alt="Screenshot 2023-04-17 at 2 56 48 PM" src="https://user-images.githubusercontent.com/4363970/232493063-4396ed74-1281-4f95-974d-a85904d0ec80.png">
-
-<img width="800" alt="Screenshot 2023-04-17 at 3 05 26 PM" src="https://user-images.githubusercontent.com/4363970/232493990-0a63a18b-dfe9-47af-b634-4cf7fef6ce0d.png">
+## ChatGPT Messenger:
+Inspired by https://chat.openai.com/
 
 
-
-Build Stack:
+## Build Stack:
 
 <ul>
 <li>NextJS 13 with SWR</li>
@@ -42,6 +33,11 @@ Build Stack:
 <li>ALL THE CHATS CAN BE DELETED BY THE USER BY CLICKING ON THE 'BIN' ICON ADJACENT TO EVERY NEW CHAT</li>
 </ul>
 
+## App Screenshots
+<img width="800" alt="Screenshot 2023-04-17 at 2 32 26 PM" src="https://user-images.githubusercontent.com/4363970/232492915-81f8375f-2b78-4649-a084-874b3639fd17.png">
 
+<img width="800" alt="Screenshot 2023-04-17 at 2 56 24 PM" src="https://user-images.githubusercontent.com/4363970/232492979-63e7fcc9-ec2c-4708-8b8a-649232c2463f.png">
 
+<img width="800" alt="Screenshot 2023-04-17 at 2 56 48 PM" src="https://user-images.githubusercontent.com/4363970/232493063-4396ed74-1281-4f95-974d-a85904d0ec80.png">
 
+<img width="800" alt="Screenshot 2023-04-17 at 3 05 26 PM" src="https://user-images.githubusercontent.com/4363970/232493990-0a63a18b-dfe9-47af-b634-4cf7fef6ce0d.png">
