@@ -6,6 +6,8 @@ import { serverTimestamp, addDoc, collection } from "firebase/firestore";
 import { db } from "../services/firebase";
 import toast from "react-hot-toast";
 import { Message } from "../types/types";
+import ModelSelection from './ModelSelection'
+import useSWR from "swr";
 
 interface Props {
   chatId: string;
@@ -14,8 +16,10 @@ interface Props {
 const ChatInput = ({ chatId }: Props) => {
   const [prompt, setPrompt] = useState<string | "">("");
   const { data: session } = useSession();
-  const model = "text-davinci-003";
 
+  const { data: model } = useSWR("model", {
+    fallbackData: "text-davinci-003",
+  });
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!prompt) return;
@@ -63,7 +67,10 @@ const ChatInput = ({ chatId }: Props) => {
         session,
       }),
     }).then(() => {
-      //toast notification for success
+      //toast notification for success\
+      //const scrollingElement = (document.scrollingElement || document.body);    
+      //const page = document.getElementById('page')
+      //page.scrollTop = scrollingElement.scrollHeight;
       toast.success("ChatGPT responded", {
         id: notification,
       });
@@ -90,6 +97,9 @@ const ChatInput = ({ chatId }: Props) => {
           <PaperAirplaneIcon className="h-4 w-4  -rotate-45" />
         </button>
       </form>
+      <div className='md:hidden'>
+        <ModelSelection />
+      </div>
     </div>
   );
 };

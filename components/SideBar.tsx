@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import NewChat from "./NewChat";
+import ModelSelection from "./ModelSelection";
 import { useSession, signOut } from "next-auth/react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../services/firebase";
@@ -22,11 +23,20 @@ const SideBar = () => {
       <div className="flex-1">
         <div>
           <NewChat />
-          <div>{/* model selection */}</div>
-          {/* map through the chat */}
-          {chats?.docs?.map((chat) => (
+          <div className="hidden md:block">
+          <ModelSelection />
+          </div>
+          <div className="flex flex-col space-y-2">
+            {/* map through the chat */}
+          {loading && (
+            <div className="animate-pulse mt-2 text-center text-white">
+              <p>Loading Chats...</p>
+            </div>
+          )}
+            {chats?.docs?.map((chat) => (
             <ChatRow key={chat.id} id={chat.id} />
           ))}
+          </div>
         </div>
       </div>
       {session && (

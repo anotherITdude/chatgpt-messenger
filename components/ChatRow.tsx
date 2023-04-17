@@ -33,12 +33,12 @@ const ChatRow = ({ id }: Props) => {
   return (
     <Link
       href={`/chat/${id}`}
-      className={`flex flex-row chatRow justify-evenly items-center mt-2 ${
+      className={`flex flex-row chatRow justify-center items-center mt-2 ${
         active && "animate-pulse bg-gray-600"
       }`}
     >
       <ChatBubbleLeftIcon className="h-5 w-5" />
-      <p className="hidden md:inline-flex truncate max-w-[70%]">
+      <p className="hidden md:inline-flex flex-1 truncate max-w-[70%]">
         {messages?.docs[messages?.docs.length - 1]?.data().text || "New Chat"}
       </p>
       <TrashIcon

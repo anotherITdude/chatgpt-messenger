@@ -6,6 +6,7 @@ import { db } from "../services/firebase";
 import Message from "./../components/Message";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/outline";
 
+
 interface Props {
   chatId: string;
 }
@@ -24,10 +25,10 @@ const Chat = ({ chatId }: Props) => {
         ),
         orderBy("createdAt", "asc")
       )
-  );
+  );  
 
   return (
-    <div className="flex-1 overflow-y-auto overflow-x-hidden">
+    <div  className="flex-1 overflow-y-auto overflow-x-hidden">
      {messages?.empty && (
       <>
       <p className="mt-10 text-center text-white text-sm">

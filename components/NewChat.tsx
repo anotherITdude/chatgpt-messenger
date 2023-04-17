@@ -19,7 +19,7 @@ const NewChat = () => {
     router.push(`/chat/${doc.id}`);
   };
   return (
-    <div onClick={() => createNewChat()} className="chatRow">
+    <div onClick={() => createNewChat()} className="chatRow border-gray-700 border">
       <PlusIcon className="h-4 w-4" />
       <p>New Chat</p>
     </div>

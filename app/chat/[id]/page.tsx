@@ -1,3 +1,4 @@
+ 'use client'
  import React from 'react'
  import Chat from './../../../components/Chat'
  import ChatInput from './../../../components/ChatInput'
@@ -10,7 +11,7 @@ interface Props {
 
  const ChatPage = ({params: {id}}: Props) => {
    return (
-     <div className='flex flex-col h-screen overflow-hidden'>
+     <div id='page' className='flex flex-col h-screen overflow-hidden'>
        
        {/* user requests and chat gpt responses go here*/}
        <Chat chatId={id} />
