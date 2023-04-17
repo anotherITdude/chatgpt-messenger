@@ -40,12 +40,14 @@ const SideBar = () => {
         </div>
       </div>
       {session && (
+        <>
         <img
-          onClick={() => signOut()}
           src={session.user?.image!}
           alt="profile pic"
-          className="h-12 w-12 mx-auto rounded-full cursor-pointer hover:opacity-50"
+          className="h-12 w-12 mx-auto rounded-full hover:opacity-50"
         />
+        <p onClick={() => signOut()}className='text-white text-center text-sm cursor-pointer mt-3 mb-2'>Logout</p>
+        </>
       )}
     </div>
   );

@@ -1,8 +1,9 @@
 import React from "react";
 import {
-  CodeBracketIcon,
-  AcademicCapIcon,
-  GlobeAsiaAustraliaIcon,
+  SunIcon,
+  BoltIcon,
+  ExclamationTriangleIcon
+  
 } from "@heroicons/react/24/outline";
 
 const HomePage = () => {
@@ -12,8 +13,8 @@ const HomePage = () => {
       <div className="flex text-center space-x-2">
         <div>
           <div className="flex flex-col justify-center items-center mb-5">
-            <CodeBracketIcon className="h-6 w-6" />
-            <h2 className="">Examples - Coding</h2>
+            <SunIcon className="h-6 w-6" />
+            <h2 className="">Examples</h2>
           </div>
 
           <div className="space-y-5">
@@ -31,26 +32,26 @@ const HomePage = () => {
 
         <div>
           <div className="flex flex-col justify-center items-center mb-5">
-            <AcademicCapIcon className="h-6 w-6" />
-            <h2 className="">Examples - Academics</h2>
+            <BoltIcon className="h-6 w-6" />
+            <h2 className="">Capabilities</h2>
           </div>
 
           <div className="space-y-5">
-            <p className="info">Learn Swedish</p>
-            <p className="info">How can prepare for IAS extrance exam?</p>
-            <p className="info">How can i prepare for IELTS exam?</p>
+            <p className="info">Remembers what user said earlier in the conversation</p>
+            <p className="info">Allows user to provide follow-up corrections</p>
+            <p className="info">Trained to decline inappropriate requests</p>
           </div>
         </div>
 
         <div>
           <div className="flex flex-col justify-center items-center mb-5">
-            <GlobeAsiaAustraliaIcon className="h-6 w-6" />
-            <h2 className="">Examples - Global</h2>
+            <ExclamationTriangleIcon className="h-6 w-6" />
+            <h2 className="">Limitations</h2>
           </div>
           <div className="space-y-5">
-            <p className="info">What is the happpines index of Sweden?</p>
-            <p className="info">How can we control global warming?</p>
-            <p className="info">When was world war II fought?</p>
+            <p className="info">May occasionally generate incorrect information</p>
+            <p className="info">May occasionally produce harmful instructions or biased content</p>
+            <p className="info">Limited knowledge of world and events after 2021</p>
           </div>
         </div>
       </div>

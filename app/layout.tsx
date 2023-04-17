@@ -7,8 +7,8 @@ import Login from "../components/Login";
 import { authOptions } from "./../pages/api/auth/[...nextauth]";
 
 export const metadata = {
-  title: "ChatGPT Messenger",
-  description: "ChatCPT messenger built on NextJS & tailwindcss",
+  title: "AnotherItDude | ChatGPT Messenger",
+  description: "ChatGPT Messenger using NextJS, Typescript, Open AI API, Tailwind CSS and Google Authentication using next-auth",
 };
 
 export default async function RootLayout({

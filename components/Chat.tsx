@@ -31,7 +31,10 @@ const Chat = ({ chatId }: Props) => {
     <div  className="flex-1 overflow-y-auto overflow-x-hidden">
      {messages?.empty && (
       <>
-      <p className="mt-10 text-center text-white text-sm">
+      <p className="mt-16 text-center text-white text-sm">
+        Hello, {session?.user?.name || 'User'}
+      </p>
+      <p className="mt-5 text-center text-white text-sm">
         Type a message prompt below and ask chatGPT anything
       </p>
       <ArrowDownCircleIcon className='h-10 w-10 mx-auto mt-10 text-white animate-bounce' />
