@@ -1,6 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## ChatGPT Messenger
+## Screenshots
+<img width="800" alt="Screenshot 2023-04-17 at 2 32 26 PM" src="https://user-images.githubusercontent.com/4363970/232492915-81f8375f-2b78-4649-a084-874b3639fd17.png">
+
+<img width="800" alt="Screenshot 2023-04-17 at 2 56 24 PM" src="https://user-images.githubusercontent.com/4363970/232492979-63e7fcc9-ec2c-4708-8b8a-649232c2463f.png">
+
+<img width="800" alt="Screenshot 2023-04-17 at 2 56 48 PM" src="https://user-images.githubusercontent.com/4363970/232493063-4396ed74-1281-4f95-974d-a85904d0ec80.png">
+
+<img width="800" alt="Screenshot 2023-04-17 at 3 05 26 PM" src="https://user-images.githubusercontent.com/4363970/232493990-0a63a18b-dfe9-47af-b634-4cf7fef6ce0d.png">
+
+
 
 Build Stack:
 
@@ -12,8 +21,7 @@ Build Stack:
 <li>Firebase / Firebase Admin (to implement CRUD operations from user and server end)</li>
 <li>Tailwind CSS</li>
 <li>React Hot Toast</li>
-<li>React Select (to load all the models provided by 
-OpenAi API 3.2.1)</li>
+<li>React Select (to load all the models provided by OpenAi API)</li>
 <li>Hero Icons</li>
 </ul>
 
