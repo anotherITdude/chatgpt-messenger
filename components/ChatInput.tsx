@@ -68,9 +68,6 @@ const ChatInput = ({ chatId }: Props) => {
       }),
     }).then(() => {
       //toast notification for success\
-      //const scrollingElement = (document.scrollingElement || document.body);    
-      //const page = document.getElementById('page')
-      //page.scrollTop = scrollingElement.scrollHeight;
       toast.success("ChatGPT responded", {
         id: notification,
       });

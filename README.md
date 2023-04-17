@@ -1,13 +1,16 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## ChatGPT Messenger
 
-First, run the development server:
+Build Stack:
 
 ```bash
-npm run dev
-# or
-yarn dev
+-NextJS with SWR
+-Next Auth ( to login with google)
+-TypeScript
+-Firebase 'to save chats'
+
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
