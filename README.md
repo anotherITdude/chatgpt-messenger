@@ -38,3 +38,9 @@ OpenAi API 3.2.1).
 -Upon getting the result its saved using firebase admin service and then pushed to the frontend, where you can see it.
 
 -ALL THE CHATS CAN BE DELETED BY THE USER BY CLICKING ON THE 'BIN' ICON ADJACENT TO EVERY NEW CHAT
+
+
+<ul>
+<li>NextJS 13 with SWR.</li>
+<li>Next Auth (to login with google).</li>
+</ul>
