@@ -19,7 +19,7 @@ Inspired by https://chat.openai.com/
 
 ## Demo Link
 
-[CLICK HERE](https://chatgpt-messenger-umber.vercel.app) to see the app hosted on Vercel.
+[CLICK HERE](https://chatgpt-messenger-anotheritdude.vercel.app) to see the app hosted on Vercel.
 
 
 ## Flow
