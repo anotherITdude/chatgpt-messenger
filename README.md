@@ -4,6 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Build Stack:
 
+* [![Next][Next.js]][Next-url]
 -NextJS 13 with SWR.
 -Next Auth (to login with google).
 -TypeScript.
