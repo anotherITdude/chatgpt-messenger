@@ -5,12 +5,16 @@ import {
   ExclamationTriangleIcon
   
 } from "@heroicons/react/24/outline";
-
+import NewChat from "../components/NewChat";
 const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen text-white px-2 ">
       <h1 className="text-5xl font-bold mb-20 "> Chat GPT</h1>
+      <div className='mb-6 mt-[-10%] md:hidden'>
+      <NewChat />
+      </div>  
       <div className="flex text-center space-x-2">
+      
         <div>
           <div className="flex flex-col justify-center items-center mb-5">
             <SunIcon className="h-6 w-6" />
